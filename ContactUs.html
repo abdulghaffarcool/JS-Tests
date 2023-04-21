@@ -11,44 +11,60 @@
     <body>
         <div id="header"></div>
         
-          <div class="flex justify-center ">
-            <div class="flex md:flex-row flex-col justify-center max-w-7xl m-4 ">
-                <div class="lg:w-1/2 bg-black ">
-                    <div class="flex justify-center flex-col items-center">
-                        <div class="text-white m-6 text-xl z-200"> Contact Us </div>
-                        <div class="text-white m-6 z-200"> We are always here to help out whatever way we can :) </div>
-                        <div class="text-white m-6 z-200">
-                            <div class="flex m-2">
-                                <ion-icon name="person-outline" class="m-2"></ion-icon> <input placeholder="Name"
-                                    class="bg-gray-800 p-2 rounded-3xl">
-                            </div>
-                            <div class="flex m-2">
-                                <ion-icon name="mail-outline" class="m-2"></ion-icon> <input placeholder="E-mail"
-                                    class="bg-gray-800 p-2 rounded-3xl">
-                            </div>
-                            <div class="flex m-2">
-                                <ion-icon name="call-outline" class="m-2"></ion-icon> <input placeholder="Phone"
-                                    class="bg-gray-800 p-2 rounded-3xl">
-                            </div>
-                            <div class="flex m-2">
-                                <ion-icon name="create-outline" class="m-2"></ion-icon> <input
-                                    placeholder="Type your message" class="bg-gray-800 p-2 rounded-3xl">
-                            </div>
-                            <div class="block m-2justify-center">
-                                <div class="bg-blue-700 p-2 rounded-3xl hover:bg-blue-800 cursor-pointer ">
-                                    <div class="flex justify-center"> Send </div>
-                                </div>
-                            </div>
+        <div class="flex justify-center">
+            <div class="flex flex-col md:flex-row justify-center max-w-7xl  mt-5">
+                <div class="flex flex-col px-7 py-2 bg-slate-200  w-full rounded-tl-3xl">
+                    <div class="text-lg font-semibold">
+                        <h1>Send a message</h1>
+                    </div>
+                    <div class="flex flex-col md:flex-row ">
+                        <div class="">
+                            <input type="text" name="" id="" placeholder="Enter first name" class="w-full border-2 border-white px-3 py-1 text-sm outline-none placeholder:text-black placeholder:opacity-40 mt-4 mr-2 focus:border-blue-500 duration-200 ease-in-out rounded-lg">
+                        </div>
+                        <div class="">
+                            <input type="text" name="" id="" placeholder="Enter last name" class="w-full md:w-[95%] border-2 border-white px-3 py-1 text-sm outline-none placeholder:text-black placeholder:opacity-40 mt-4 md:ml-2 focus:border-blue-500 duration-200 ease-in-out rounded-lg">
                         </div>
                     </div>
+                    <input type="email" name="" id="" placeholder="Enter email address" class="w-full border-2 border-white text-sm outline-none px-3 py-1 placeholder:text-black placeholder:opacity-40 mt-4 focus:border-blue-500 duration-200 ease-in-out rounded-lg">
+                    <input type="tel" name="" id="" placeholder="Phone Number" class="w-full border-2 border-white text-sm outline-none px-3 py-1 placeholder:text-black placeholder:opacity-40 mt-4 focus:border-blue-500 duration-200 ease-in-out rounded-lg">
+                    <input type="text" name="" id="" placeholder="Subject" class="w-full border-2 border-white text-sm outline-none px-3 py-1 placeholder:text-black placeholder:opacity-40 mt-4 focus:border-blue-500 duration-200 ease-in-out rounded-lg">
+                    <textarea id="message" name="message" placeholder="Write us a message" class="mb-3 w-full border-2 border-white h-44 text-sm outline-none placeholder:text-black placeholder:opacity-40 focus:border-blue-500 py-1 px-3 mt-4 resize-none leading-6 duration-200 ease-in-out rounded-lg"></textarea>
+                    <button class="bg-blue-900 hover:bg-blue-600 px-4 font-semibold text-white w-1/2 text-center mx-auto my-3 rounded-tr-lg rounded-bl-lg">Submit</button>
                 </div>
-                <div class="w-3/4 lg:w-2/3 ">
-                    <div class="w-3/4 lg:w-1/2 overflow-contain h-min"> <iframe
+                <div class="flex flex-col bg-blue-900 text-white md:w-[65%] rounded-br-3xl">
+                    <h1 class="font-semibold px-5 my-5">Contact info</h1>
+                    <div class="flex px-5 space-x-2">
+                        <ion-icon name="call-sharp" class="text-orange-500  mt-1 my-3"></ion-icon>
+                        <span class="text-sm">+1 900 267 2678</span>
+                    </div>
+                    <div class="flex px-5 space-x-2">
+                        <ion-icon name="mail" class="text-orange-500  mt-1 my-3"></ion-icon>
+                        <span class="text-sm">info@gmail.com</span>
+                    </div>
+                    <div class="flex px-5 space-x-2">
+                        <ion-icon name="globe-outline" class="text-orange-500 mt-1 my-3" ></ion-icon>
+                        <span class="text-sm">www.tailblocks.org</span>
+                    </div>
+                    <div class="px-5 space-x-5 mt-7 mx-auto mb-5" >
+                        <a href="#"><i class="fa-brands fa-facebook-f text-white text-2xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram text-red-500  text-2xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin text-yellow-500 text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/290d4f0eb4.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     
+
+          <div class="flex justify-center ">
+            <div class="flex md:flex-row flex-col justify-center max-w-7xl m-4 ">
+                    <div class="w-3/4 lg:w-2/2 overflow-contain h-min"> <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.315540303!2d-74.26054823358196!3d40.697147766721685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1656264173526!5m2!1sen!2sin"
                             width="375" height="667" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
                 </div>
-            </div>
             </div>
             <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
