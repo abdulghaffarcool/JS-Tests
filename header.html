@@ -22,3 +22,73 @@
       
     </div>
   </header>
+
+  
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Nimo Store</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="store.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="Services.html">Services</a>
+        <a class="mr-5 hover:text-gray-900" href="Pricing.html">Pricing</a>
+        <a class="mr-5 hover:text-gray-900" href="Team.html">Team</a>
+        <a class="mr-5 hover:text-gray-900" href="Testimonials.html">Testimonials</a>
+        <div class="relative group">
+          <button class="mr-5 hover:text-gray-900 focus:outline-none">
+            Gallery
+          </button>
+          <div class="absolute left-0 mt-2 py-2 w-40 bg-white shadow-md rounded-lg z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200" x-data="{ open: false }">
+            <a href="Gallery.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:text-gray-900">Gallery 1</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:text-gray-900">Gallery 2</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:text-gray-900">Gallery 3</a>
+          </div>
+        </div>
+        <a class="mr-5 hover:text-gray-900" href="ContactUs.html">Contact</a>
+        <a class="mr-5 hover:text-gray-900" href="AboutUs.html">About</a>
+      </nav>
+      <button class="inline-flex items-center hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+        <a class="mr-5 hover:text-gray-900" href="Login.html">Sign In</a>
+      </button>
+    </div>
+  </header>
+
+  
+  <nav class="bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <img class="h-8 w-8" src="logo.png" alt="Logo">
+        </div>
+  
+        <!-- Menu -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+            <div x-data="{ open: false }" @click.away="open = false" class="relative">
+              <button @click="open = !open" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none">
+                Services
+              </button>
+              <div x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="absolute left-0 mt-2 space-y-2">
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-sm font-medium">Web Design</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-sm font-medium">Mobile App Development</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-sm font-medium">SEO</a>
+              </div>
+            </div>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Include Alpine.js -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/alpine.js" defer></script>
+  
+  
